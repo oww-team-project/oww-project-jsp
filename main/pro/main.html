@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script defer src="/js/main.js"></script>
     <title>main</title>
 </head>
 <body>
+
     <header>
         <div class="header-container">
             <div class="header-box1">
                 <div class="logo">
-                    <a href="../main/main.html">
-                        <img src="../admin/img/logo.png" alt="">
+                    <a href="/main/pro/main.html">
+                        <img src="/img/logo.png" alt="팀 로고">
                     </a>
                 </div>
                 <div class="header-nav">
                     <ul class="header-nav">
                         <li>
-                            <a href="../hmap/hmap.html">우리동네 헬스장</a>
+                            <a href="/hmap/hmap.html">우리동네 헬스장</a>
                         </li>
                         <li>
-                            <a href="../community/community.html">커뮤니티</a>
+                            <a href="/board/pro/community.html">커뮤니티</a>
                         </li>
                     </ul>
                 </div>
@@ -29,21 +32,22 @@
             <div class="header-box2">
                 <ul class="header-box2">
                     <li>
-                        <a href="../login/login.html">로그인</a>
+                        <a href="/member/pro/login.html">로그인</a>
                     </li>
                     <li>
-                        <a href="../main/join.html">회원가입</a>
+                        <a href="/member/pro/join.html">회원가입</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </header>
+    </header> 
+    
     <main class="main-outline"><!--main시작-->
         <div class="main-outline-container">
             <div class="main-outline-container-banner-container"><!--main-banner의 시작-->
 	  <!-- <div class = "arrow prev">&lt;</div> -->
               <div class = "banner">
-                <a href="../community/community.html">
+                <a href="/board/pro/community.html">
                     <div class ='img'>
                         <img src = "https://ifh.cc/g/ChphJd.jpg">
                     </div> 
@@ -114,8 +118,8 @@
             </div>
         </div>
     </main><!--main종료-->
-    <footer><!--footer 시작-->
 
+    <footer><!--footer 시작-->
         <div class="footer-01">
             <div class="footer-01-01">
                <div>(주)오운완 | 대표자 : 노의진(팀장), 이지윤(부팀장), 김민규, 이동현, 유대훈</div>
@@ -126,50 +130,11 @@
             <div class="footer-02-01">
                 <div>ⓒ2023 OWW All Rights Reserved</div>
                 <div>
-                    <a href="./privacy.html" target="_blank">개인정보처리방침</a>
+                    <a href="/main/pro/privacy.html">개인정보처리방침</a>
                 </div>
             </div>
         </div>
-
     </footer><!--footer 종료-->
+    
 </body>
-<script>
-    const btns = document.querySelectorAll("button.btn");
-    const banner = document.querySelector("div.banner");
-    const arrows = document.querySelectorAll("div.arrow");
-    var count = 0;
-
-    btns.forEach(function(value, index, ar){
-        ar[index].addEventListener("click", function(){
-            count = index;
-            banner.style.transform = "translate(-" + count * 980 + "px )";
-        })
-    });
-
-    //이전, 다음 버튼 클릭시 알맞은 배너로 이동
-    arrows.forEach((arrow) => {
-        arrow.addEventListener("click", function(){
-            let arrowType = arrow.classList[1];
-            if(arrowType == 'prev' && count != 0){
-                count --;
-            }else if(arrowType == 'next' && count != 3 - 1){
-                count ++;
-            }else{
-                if(count == 3 - 1){
-                    count = 0;
-                }else{
-                    count = 2;
-                }
-            }
-            banner.style.transform = "translate(-" + count * 980 + "px )";
-        });
-    });
-
-    //setInterval 함수에 첫번째 전달된 익명함수가 3초마다 실행, 이미지가 좌우로 슬라이드 되는 효과
-    var time = setInterval(function (){
-        count++;
-        count = count == 3? 0 : count;
-        banner.style.transform = "translate(-" + count * 980 + "px )";
-    }, 3000);
-</script>
 </html>
