@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오운완</title>
-    <link rel="stylesheet" href="../main/join.css">
+    <link rel="stylesheet" href="../../css/join.css">
+    <script defer src ="../../js/join.js"></script>
 </head>
 <body style="overflow: auto">
     <header>
         <div class="header-container">
             <div class="header-box1">
                   <a class="logo" href="../main/main.html">
-                    <img src="../admin/img/logo.png" alt="">
+                    <img src="../../img/logo.png" alt="">
                   </a>
                 <div class="header-nav">
                     <ul class="header-nav">
                         <li>
-                            <a href="../hmap/hmap.html">우리동네 헬스장</a>
+                            <a href="../../hmap/hmap.html">우리동네 헬스장</a>
                         </li>
                         <li>
-                            <a href="../community/community.html">커뮤니티</a>
+                            <a href="../../board/project/community.html">커뮤니티</a>
                         </li>
                     </ul>
                 </div>
@@ -27,10 +28,10 @@
             <div class="header-box2">
                 <ul class="header-box2">
                     <li>
-                        <a href="../login/login.html">로그인</a>
+                        <a href="../../member/project/login.html">로그인</a>
                     </li>
                     <li>
-                        <a href="../main/join.html">회원가입</a>
+                        <a href="../../member/project/join.html">회원가입</a>
                     </li>
                 </ul>
             </div>
@@ -177,9 +178,6 @@
 개인정보 수집 및 이용에 동의함
 <br>
 <br>
-
-
- 2023년 00월 00일
 <br>
 <br>
 
@@ -200,7 +198,7 @@
                   </div>
 
                   <div class="main-container-section">
-                  <a href="../main/main.html">
+                  <a href="../../main/project/main.html">
                     <button class="main-b2" name="emailAuth" type="button">
                       회원가입하기
                     </button>
@@ -226,60 +224,11 @@
             <div class="footer-02-01">
                 <div>ⓒ2023 OWW All Rights Reserved</div>
                 <div>
-                    <a href="../main/privacy.html">개인정보처리방침</a>
+                    <a href="../../main/project/privacy.html">개인정보처리방침</a>
                 </div>
             </div>
         </div>
 
     </footer>
 </body>
-<script>
-  //모달창 js
-const body = document.querySelector('body');
-const modal = document.querySelector('.modal');
-const btnOpenPopup = document.querySelector('.btn-open-popup');
-
-btnOpenPopup.addEventListener('click', () => {
- modal.classList.toggle('show');
-//모달 on
-
-if (modal.classList.contains('show')) {
-body.style.overflow = 'hidden';
-//모달 off
-}
-});
-
-modal.addEventListener('click', (event) => { if (event.target === modal) {
-modal.classList.toggle('show');
-//class를 이용한 모달 on/off
-
-if (!modal.classList.contains('show')) {
-body.style.overflow = 'auto';
-}
-}
-});
-//모달창 js 끝
-var time = 300; //기준시간 작성
-	var min = ""; //분
-	var sec = ""; //초
-
-	//setInterval(함수, 시간) : 주기적인 실행
-	var x = setInterval(function() {
-		//parseInt() : 정수를 반환
-		min = parseInt(time/60); //몫을 계산
-		sec = time%60; //나머지를 계산
-
-		document.getElementById("time").innerHTML = min + "분" + sec + "초";
-		time--;
-
-		//타임아웃 시
-		if (time < 0) {
-			clearInterval(x); //setInterval() 실행을 끝냄
-			document.getElementById("time").innerHTML = "시간초과";
-		}
-	}, 1000);
-//타이머 js
-
-//타이머 js 끝
-</script>
 </html>
