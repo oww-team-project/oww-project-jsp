@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오운완</title>
+    <link rel="stylesheet" href="../main/join.css">
+</head>
+<body style="overflow: auto">
+    <header>
+        <div class="header-container">
+            <div class="header-box1">
+                  <a class="logo" href="../main/main.html">
+                    <img src="../admin/img/logo.png" alt="">
+                  </a>
+                <div class="header-nav">
+                    <ul class="header-nav">
+                        <li>
+                            <a href="../hmap/hmap.html">우리동네 헬스장</a>
+                        </li>
+                        <li>
+                            <a href="../community/community.html">커뮤니티</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-box2">
+                <ul class="header-box2">
+                    <li>
+                        <a href="../login/login.html">로그인</a>
+                    </li>
+                    <li>
+                        <a href="../main/join.html">회원가입</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+      <div class="main-container-outline"><!--메인 시작-->
+          <div class="main-container">
+              <div class="main-container-up">
+                  <h1>회원가입</h1>
+              </div>
+              <div class="main-container-down">
+                
+                  <div class="main-container-down-section01"></div>
+
+                  <div class="main-container-section">
+                    <label class="main-label1">
+                      이메일
+                    </label>
+                    <label>
+                      <input type="emall" name="email" placeholder="이메일" value class="main-label1-input">
+                    </label>
+
+                    <div>
+                      <button class="main-b1" name="emailAuth" type="button">
+                        이메일 인증하기
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="main-container-section2">
+                    <div class="main-c-s-d1">
+                      <input type="emall" name="email" placeholder="인증번호" value class="main-label1-input2">
+                      <div class="main-time" id="time"></div>
+                      <button class="main-b3">확 인</button>
+                    </div>
+                  </div>
+
+                  <div class="main-container-section">
+
+                    <label class="main-label1">
+                      닉네임
+                    </label>
+                    <div class="main-l1-d1">
+                      다른 유저와 겹치지 않도록 입력해주세요. (2~15자)
+                    </div>
+                    <label>
+                      <input type="nickname" name="nickname" placeholder="닉네임" value class="main-label1-input">
+                    </label>
+
+                  </div>
+
+                  
+                  <div class="main-container-section">
+
+                    <label class="main-label1">
+                      비밀번호
+                    </label>
+                    <div class="main-l1-d1">
+                      영문, 숫자를 포함한 8~12자리의 비밀번호를 입력해주세요.
+                    </div>
+                    <label>
+                      <input type="password" name="password" placeholder="비밀번호" value class="main-label1-input">
+                    </label>
+
+                  </div>
+
+                  <div class="main-container-section">
+
+                    <label class="main-label1">
+                      비밀번호 확인
+                    </label>
+                    <div class="main-l1-d1">
+                      비밀번호를 한 번 더 입력해 주세요.
+                    </div>
+                    <label>
+                      <input type="password" name="password" placeholder="비밀번호 확인" value class="main-label1-input">
+                    </label>
+                  </div>
+
+                  <div class="main-container-section">
+                    <label class="main-label1">
+                      약관동의
+                    </label>
+                    <hr>
+
+                    <div class="main-c-s">
+                      <input type="checkbox" value="false" class="main-checkbox">
+
+
+<!-- 모달 창 들어 가는 부분 -->
+                      <div class="modal">
+                        <div class="modal_body">
+                          <strong>
+                            개인정보처리동의서
+                          </strong>
+                          <br>
+                          <br>
+<span class="modal_span">
+&nbsp;오운완(이하 '회사'라고 합니다)은 개인정보보호법 등 관련 법령상의 개인정보보호 규정을 준수하며 귀하의 개인정보보호에 최선을 다하고 있습니다. 회사는 개인정보보호법에 근거하여 다음과 같은 내용으로 개인정보를 수집 및 처리하고자 합니다.
+<br>
+<br>
+
+
+&nbsp;다음의 내용을 자세히 읽어보시고 모든 내용을 이해하신 후에 동의 여부를 결정해주시기 바랍니다.
+<br>
+<br>
+
+
+
+제1조(개인정보 수집 및 이용 목적)
+<br>
+&nbsp;이용자가 제공한 모든 정보는 다음의 목적을 위해 활용하며, 목적 이외의 용도로는 사용되지 않습니다.
+<br>
+- 본인확인
+<br>
+<br>
+
+
+제2조(개인정보 수집 및 이용 항목)
+<br>
+&nbsp;회사는 개인정보 수집 목적을 위하여 다음과 같은 정보를 수집합니다.
+<br>
+- 이메일
+<br>
+<br>
+
+제3조(개인정보 보유 및 이용 기간)
+<br>
+&nbsp;수집한 개인정보는 수집·이용 동의일로부터  3년간  보관 및 이용합니다.
+&nbsp;개인정보 보유기간의 경과, 처리목적의 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.
+<br>
+<br>
+
+
+제4조(동의 거부 관리)
+<br>
+&nbsp;귀하는 본 안내에 따른 개인정보 수집·이용에 대하여 동의를 거부할 권리가 있습니다. 다만, 귀하가 개인정보 동의를 거부하시는 경우에 서비스 이용 일부 불가의 불이익이 발생할 수 있음을 알려드립니다.
+<br>
+
+&nbsp;본인은 위의 동의서 내용을 충분히 숙지하였으며,위와 같이 개인정보를 수집·이용하는데 동의합니다.
+<br>
+<br>
+개인정보 수집 및 이용에 동의함
+<br>
+<br>
+
+
+ 2023년 00월 00일
+<br>
+<br>
+
+
+ 성명 : 오운완 (서명 또는 인)
+</span>
+                        </div>
+                      </div>
+                      <button class="btn-open-popup">
+                        개인정보수집 및 이용동의<p class="span-p">(필수)</p>
+                      </button>
+
+<!-- 모달 창 들어 가는 부분 끝 -->
+
+                    </div>
+                    
+          
+                  </div>
+
+                  <div class="main-container-section">
+                  <a href="../main/main.html">
+                    <button class="main-b2" name="emailAuth" type="button">
+                      회원가입하기
+                    </button>
+                  </a>
+                  </div>
+
+
+
+              </div>
+          </div>
+      </div>
+  </main>
+    
+    <footer>
+
+        <div class="footer-01">
+            <div class="footer-01-01">
+               <div>(주)오운완 | 대표자 : 노의진(팀장), 이지윤(부팀장), 김민규, 이동현, 유대훈</div>
+               <div>서울특별시 노원구 상계로 1길 34 5층 | 전화번호 : 02-933-5890</div>
+            </div>
+        </div>
+        <div class="footer-02">
+            <div class="footer-02-01">
+                <div>ⓒ2023 OWW All Rights Reserved</div>
+                <div>
+                    <a href="../main/privacy.html">개인정보처리방침</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+<script>
+  //모달창 js
+const body = document.querySelector('body');
+const modal = document.querySelector('.modal');
+const btnOpenPopup = document.querySelector('.btn-open-popup');
+
+btnOpenPopup.addEventListener('click', () => {
+ modal.classList.toggle('show');
+//모달 on
+
+if (modal.classList.contains('show')) {
+body.style.overflow = 'hidden';
+//모달 off
+}
+});
+
+modal.addEventListener('click', (event) => { if (event.target === modal) {
+modal.classList.toggle('show');
+//class를 이용한 모달 on/off
+
+if (!modal.classList.contains('show')) {
+body.style.overflow = 'auto';
+}
+}
+});
+//모달창 js 끝
+var time = 300; //기준시간 작성
+	var min = ""; //분
+	var sec = ""; //초
+
+	//setInterval(함수, 시간) : 주기적인 실행
+	var x = setInterval(function() {
+		//parseInt() : 정수를 반환
+		min = parseInt(time/60); //몫을 계산
+		sec = time%60; //나머지를 계산
+
+		document.getElementById("time").innerHTML = min + "분" + sec + "초";
+		time--;
+
+		//타임아웃 시
+		if (time < 0) {
+			clearInterval(x); //setInterval() 실행을 끝냄
+			document.getElementById("time").innerHTML = "시간초과";
+		}
+	}, 1000);
+//타이머 js
+
+//타이머 js 끝
+</script>
+</html>
