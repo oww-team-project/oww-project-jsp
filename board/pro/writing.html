@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>글 작성</title>
-    <link rel="stylesheet" href="writing.css">
+    <link rel="stylesheet" href="../../css/writing.css">
+    <script defer src="../../js/writing.js"></script>
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="header-box1">
-                <div class="logo"><a href="../main/main.html"><img src="./img/logo.png" alt=""></a></div>
+                <div class="logo"><a href="../../main/pro/main.html"><img src="../../img/logo.png" alt=""></a></div>
                 <div class="header-nav">
                     <ul class="header-nav">
                         <li>
-                            <a href="../hmap/hmap.html">우리동네 헬스장</a>
+                            <a href="../../hmap/hmap.html">우리동네 헬스장</a>
                         </li>
                         <li>
                             <a href="./community.html">커뮤니티</a>
@@ -25,10 +26,10 @@
             <div class="header-box2">
                 <ul class="header-box2">
                     <li>
-                        <a href="../mypage/mypage.html">이지윤님</a>
+                        <a href="../../member/views/mypage.html">이지윤님</a>
                     </li>
                     <li>
-                        <a href="../main/main.html">로그아웃</a>
+                        <a href="../../main/pro/main.html">로그아웃</a>
                     </li>
                 </ul>
             </div>
@@ -57,7 +58,7 @@
                         </form>
                         </div>
                     </div>
-                    <div class="buttons"><button id="button1" onclick="call_confirm1()"><a id="button1" href="./freeBoard.html">취소</a></button><button class="button2" onclick="call_confirm2()"><a id="button2" href="./readingMy.html">등록</a></button></div>
+                    <div class="buttons"><button id="button1" onclick="call_confirm1()"><a id="button1" href="./freeBoard.html">취소</a></button><button class="button2" onclick="call_confirm2()"><a id="button2" href="../views/readingMy.html">등록</a></button></div>
                 </form>
             </div>
         </div>
@@ -73,28 +74,10 @@
             <div class="footer-02-01">
                 <div>ⓒ2023 OWW All Rights Reserved</div>
                 <div>
-                    <a href="../main/main.html">개인정보처리방침</a>
+                    <a href="../../main/pro/privacy.html">개인정보처리방침</a>
                 </div>
             </div>
         </div>
     </footer>
-    <script>
-        function call_confirm1(){
-            if(confirm("글 작성을 취소하시겠습니까?")){
-                alert("글 작성이 취소되었습니다.");
-            }else{
-
-            }
-        }
-            function call_confirm2(){
-            if(confirm("글을 등록하시겠습니까?")){
-                alert("글이 등록되었습니다.");
-                location.href="./readingMy.html";
-            }else{
-
-            }
-
-        }
-    </script>
 </body>
 </html>

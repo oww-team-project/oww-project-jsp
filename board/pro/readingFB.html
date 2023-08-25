@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>작성된 글 보기(자유)</title>
-    <link rel="stylesheet" href="readingFB.css">
+    <link rel="stylesheet" href="../../css/readingFB.css">
+    <script defer src="../../js/readingFB.js"></script>
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="header-box1">
-                <div class="logo"><a href="../main/main.html"><img src="./img/logo.png" alt=""></a></div>
+                <div class="logo"><a href="../../main/pro/main.html"><img src="../../img/logo.png" alt=""></a></div>
                 <div class="header-nav">
                     <ul class="header-nav">
                         <li>
-                            <a href="../hmap/hmap.html">우리동네 헬스장</a>
+                            <a href="../../hmap/hmap.html">우리동네 헬스장</a>
                         </li>
                         <li>
                             <a href="./community.html">커뮤니티</a>
@@ -25,10 +26,10 @@
             <div class="header-box2">
                 <ul class="header-box2">
                     <li>
-                        <a href="../mypage/mypage.html">이지윤님</a>
+                        <a href="../../member/views/mypage.html">이지윤님</a>
                     </li>
                     <li>
-                        <a href="../main/main.html">로그아웃</a>
+                        <a href="../../main/pro/main.html">로그아웃</a>
                     </li>
                 </ul>
             </div>
@@ -52,8 +53,9 @@
                 </div>
             </div> 
             <div class="main-box2">
-                <div class="main-box2-list-button">
-                    <button><a id="listbutton" href="./freeBoard.html">목록</a></button>
+                <div class="main-box2-buttons">
+                    <button id="listbutton"><a id="listbutton" href="./freeBoard.html">목록</a></button>
+                    <button id="notifybutton"><a id="notifybutton" onclick="call_confirm()">신고하기</a></button>
                 </div>
             </div>
             <div class="main-box3">
@@ -111,7 +113,7 @@
             <div class="footer-02-01">
                 <div>ⓒ2023 OWW All Rights Reserved</div>
                 <div>
-                    <a href="../main/main.html">개인정보처리방침</a>
+                    <a href="../../main/pro/privacy.html">개인정보처리방침</a>
                 </div>
             </div>
         </div>
