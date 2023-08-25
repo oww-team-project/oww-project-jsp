@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>(관리자)공지사항 글 수정</title>
-    <link rel="stylesheet" href="adminRewriting.css">
+    <link rel="stylesheet" href="../../css/adminRewriting.css">
+    <script defer src="../../js/adminRewriting.js"></script>
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="header-box1">
-                <div class="logo"><a href="../main/main.html"><img src="./img/logo.png" alt=""></a></div>
+                <div class="logo"><a href="../../main/pro/main.html"><img src="../../img/logo.png" alt=""></a></div>
                 <div class="header-nav">
                     <ul class="header-nav">
                         <li>
-                            <a href="../hmap/hmap.html">우리동네 헬스장</a>
+                            <a href="../../hmap/hmap.html">우리동네 헬스장</a>
                         </li>
                         <li>
-                            <a href="./community.html">커뮤니티</a>
+                            <a href="../pro/community.html">커뮤니티</a>
                         </li>
                     </ul>
                 </div>
@@ -25,10 +26,10 @@
             <div class="header-box2">
                 <ul class="header-box2">
                     <li>
-                        <a href="../admin/admin.html">관리자님</a>
+                        <a href="../../member/views/admin.html">관리자님</a>
                     </li>
                     <li>
-                        <a href="../main/main.html">로그아웃</a>
+                        <a href="../../main/pro/main.html">로그아웃</a>
                     </li>
                 </ul>
             </div>
@@ -37,7 +38,7 @@
     <main>
         <div class="main-container">
             <div class="main-box1-titlebox">
-                <div class="main-box1-title"><div id="title1"><a href="./community.html">커뮤니티</a></div><div id="title2">&gt;</div><div id="title2"><a href="./notice.html">공지사항</a></div></div>
+                <div class="main-box1-title"><div id="title1"><a href="../pro/community.html">커뮤니티</a></div><div id="title2">&gt;</div><div id="title2"><a href="../pro/notice.html">공지사항</a></div></div>
             </div>
             <div class="content-container">
                 <form class="content-form" action="">
@@ -73,23 +74,10 @@
             <div class="footer-02-01">
                 <div>ⓒ2023 OWW All Rights Reserved</div>
                 <div>
-                    <a href="../main/privacy.html">개인정보처리방침</a>
+                    <a href="../../main/pro/privacy.html">개인정보처리방침</a>
                 </div>
             </div>
         </div>
     </footer>
-    <script>
-        function call_confirm1(){
-            if(confirm("글 수정을 취소 하시겠습니까?")){
-                alert("글 수정이 취소되었습니다.");
-            }
-        }
-
-        function call_confirm2(){
-            if(confirm("글을 수정하시겠습니까?")){
-                alert("글이 수정되었습니다.");
-            }
-        }
-    </script>
 </body>
 </html>
