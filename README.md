@@ -1,2 +1,2 @@
 # oww-project-jsp
-jsp 부분
+오운완 jsp프로젝트 jsp부분
